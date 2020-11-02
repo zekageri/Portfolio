@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="My first portfolio with bootstrap4">
+    <meta name="author" content="Dr.Random">
+    <title>PortFolio</title>
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <h3 class="masthead-brand" id="currpage">Home</h3>
+      <nav class="nav nav-masthead justify-content-center">
+        <a target_trigg="mainpage" class="nav-link active" href="#">Home</a>
+        <a target_trigg="projects" class="nav-link" href="#">Projects</a>
+        <a target_trigg="contact" class="nav-link" href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main" class="inner cover">
+    <div class="mainpage">
+        <h1 class="cover-heading">Zékány Gergő</h1>
+        <p class="lead">
+            I'm a creative person with 100% ambition. Want to know me?
+        </p>
+        <p class="lead">
+            <a target_trigg="aboutme" href="#" class="nav-link btn btn-lg btn-secondary">Click <i class="fas fa-angle-down fa-spin"></i></a>
+        </p>
+    </div>
+    <div class="aboutme" style="display: none;">
+        <div class="media">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">Zékány Gergő</h5>
+              Sok szarral tengetem a napjaimat ide majd ki kell találnom egy geci kreativ szöveget.
+            </div>
+            <img src="images/rsz_me2.jpg" width="200px" class="rounded-circle ml-3" alt="itsme">
+          </div>
+
+    </div>
+
+    <div class="projects" style="display: none;">
+
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Portfolio Page
+                  </button>
+                </h2>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    Demonstrating myself, my cognitive and other skills that i can rely on.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Mood Lamp
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    Project #2 Leírás képek stb
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Koma Drive / Web-App
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    Project #3 Leírás képek stb
+                </div>
+              </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                      Koma Heating
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                      Project #4 Leírás képek stb
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                      Koma Toy-Car
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                      Project #5 Leírás képek stb
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                      RFID Access-Controll-System
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                      Project #6 Leírás képek stb
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
+                      Smart-Home
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                      Project #7 Leírás képek stb
+                  </div>
+                </div>
+              </div>
+
+          </div>
+
+    </div>
+    <div class="contact" style="display: none;">
+
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Your Email address</label>
+              <input type="email" placeholder="Your E-Mail" class="form-control" name="email" aria-describedby="emailHelp">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputPassword1">Title</label>
+              <input type="text" class="form-control" placeholder="Message-Title" name="title">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputPassword1">Message</label>
+                <textarea data-minlength="10" class="form-control" id ="message" name="message" placeholder="MESSAGE" data-error="Minimum of 10 characters" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-secondary">Send <i class="fas fa-paper-plane"></i> </button>
+
+            <div class='wrapsocial'>
+                <div class='btnsocial btn-one'>
+                  <a href="https://www.facebook.com/gergo.zekany.39" target="_blank"> <i class='fa fa-facebook'></i> </a>
+                </div>
+                <div class='btnsocial btn-two'>
+                    <a href="https://github.com/zekageri" target="_blank"> <i class='fa fa-github'></i> </a>
+                </div>
+                <div class='btnsocial btn-three'>
+                    <a href="https://www.instagram.com/zekageri/" target="_blank"> <i class='fa fa-instagram'></i> </a>
+                </div>
+                <div class='btnsocial btn-four'>
+                    <a href="https://wa.me/+36706075311?text=Hi+Gerg%C5%91%21" target="_blank"> <i class='fa fa-whatsapp'></i> </a>
+                </div>
+              </div>
+
+          </form>
+
+    </div>
+  </main>
+
+  <footer class="mastfoot mt-auto">
+    <div class="inner">
+      <p>My Portfolio page with <a href="https://getbootstrap.com">Bootstrap 4</a>, by <a href="https://github.com/zekageri">@Dr.Random</a>.</p>
+    </div>
+  </footer>
+</div>
+<script src="https://kit.fontawesome.com/a26f6e4ee4.js" crossorigin="anonymous"></script>
+<script src="portfolio.js"></script>
+</body>
+</html>
