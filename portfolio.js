@@ -30,6 +30,6 @@ var Page_Before = "mainpage";
             e.preventDefault();
             var data = $("#email_form").serializeArray();
             console.log(data);
-            window.open('mailto:drsedate@gmail.com?subject='+data[1].value+'&body='+ data[2].value+' from: '+data[0].value);
+            window.open('mailto:drsedate@gmail.com?subject='+data[1].value+'&body='+ data[2].value+'\nfrom: '+data[0].value);
         });
     }
