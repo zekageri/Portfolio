@@ -3,7 +3,7 @@ a:focus,
 a:hover {
   color: #fff;
 }
-
+ img{border:0;}
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
