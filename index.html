@@ -50,17 +50,25 @@
             I'm a creative person with 100% ambition. Want to know me?
         </p>
         <p class="lead">
-            <a target_trigg="aboutme" href="#" class="nav-link btn btn-lg btn-secondary">Click <i class="fas fa-angle-down fa-spin"></i></a>
+            <a onclick="GoToPage('aboutme')" href="#" class="btn btn-lg btn-secondary">Click <i class="fas fa-chevron-left"></i></a>
         </p>
     </div>
     <div class="aboutme" style="display: none;">
-        <div class="media">
+      <div class="media">
+        <img width="150px" src="images/thatsme3.png" class="mr-3 rounded-circle" alt="...">
+        <div class="media-body">
+          <h5 class="mt-0">Zékány Gergő</h5>
+          I'm a software developer and IoT solution manager and this is my first portfolio page under development.
+        </div>
+      </div>
+
+        <!--<div class="media">
             <div class="media-body">
               <h5 class="mt-0 mb-1">Zékány Gergő</h5>
               I'm a software developer and IoT solution manager and this is my first portfolio page under development.
             </div>
             <img style="border:none;background:none;" src="images/thatsme2.jpg" width="200px" class="ml-3" alt="itsme">
-          </div>
+          </div>-->
 
     </div>
 
@@ -92,7 +100,27 @@
               </div>
               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                 <div class="card-body">
-                    Project #2 Readme and pictures from the project.
+                    <h2>This is an ongoing project with one of my friend.<h2>
+                    <p class="lead">She is the Frontend designer, currently working on her skills in the field.</p>
+                    <h3>
+                      Project Point: 
+                      <small class="text-muted">It started as a simple project. A mood lamp. </small>
+                    </h3>
+                    <p class="lead">After it became more and more complex in my mind. 
+                      The general idea is that the lamp should open it's own WiFi Ap mode, the "user" connects to it 
+                      and a captive portal automatically opens a web-app on the device wich connected.
+                      On the web interface the user should be able to controll the lamp color, should be able to pick
+                      predefined animations and set some time where the lamp should automatically start an animation.
+                      After that i ordered the parts for this project and i created a Drive-like website for our Group
+                      the Koma'k.
+                      From now on the lamp should switch on some alert light whenever a member of the Koma'k group opens a new event on the drive site.
+                      (wherever the lamp is on the world)
+                    </p>
+                    <hr><br>
+                    <blockquote class="blockquote">
+                      <p class="mb-0"> <a href="https://github.com/zekageri/MoodLamp"><i class="fab fa-github"></i> GitHub Mood Lamp </a> </p>
+                      <footer class="blockquote-footer">Here is the project in <cite title="Source Title"><i class="fab fa-github"></i>GitHub</cite></footer>
+                    </blockquote>
                 </div>
               </div>
             </div>
@@ -100,13 +128,31 @@
               <div class="card-header" id="headingThree">
                 <h2 class="mb-0">
                   <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Koma Drive / Web-App
+                    Koma'k Drive / Web-App
                   </button>
                 </h2>
               </div>
               <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                 <div class="card-body">
-                    Project #3 Readme and pictures from the project.
+                  <h3>
+                    Project Point: 
+                    <small class="text-muted">It is my own server implementation with my own mini PC in my attic.</small>
+                  </h3>
+                  <p class="lead">
+                    The backend running on Node express JS, using some third party components for it too. Currently not using HTTP for it but i will in the future.
+                    The general idea is that i wanted my own Drive beseides google or any other party. I reforged an old MINI PC and i writed a little little NODE js server on it.
+                    The project growed to my group of friends. There are currently 6 people who can use it. The emails are prewrited to the server side and only the members of the Koma'k group
+                    can register on the web and login. 
+                    They all have a dynamically created account (when they registered) with MYSQL database, their own drive folders on the PC. Everyone able to use the "public" drive they can upload pictures
+                    and videos to it freely as well as to their accounts which they can see only. On the main page there is an Event alert, everyone is able to create an event on their account menu
+                    wich is displayed on the front page when it is created. The created event is visible to anyone who is logged in. Everyone is able to set a nickname for itself, and a profile photo too.
+                    This is required when someone wants to use the chat feature of the web wich is implemented with socket.io.
+                  </p>
+                  <hr><br>
+                    <blockquote class="blockquote">
+                      <p class="mb-0"> Don't have GitHub setup for that but here is some pictures from the website </p>
+                    </blockquote>
+                    <br>
                 </div>
               </div>
             </div>
@@ -114,13 +160,27 @@
                 <div class="card-header" id="headingThree">
                   <h2 class="mb-0">
                     <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                      Koma Heating
+                      Koma'k Heating
                     </button>
                   </h2>
                 </div>
                 <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                   <div class="card-body">
-                      Project #4 Readme and pictures from the project.
+                    <h2>This is an ongoing project with one of my friend.<h2>
+                      <p class="lead">He is a really good electrical technician specialist</p>
+                      <h3>
+                        Project Point: 
+                        <small class="text-muted">It started as a simple project as well and it remained as simple as possible. </small>
+                      </h3>
+                      <hr><br>
+                      <p class="lead">
+                        This is a simple heating. We got cold during the winter parties and we built a really strong heating wich we use inside the garage.
+                        This is a one phase max 16A current consumption beast. It uses a 2kw heating pad, a 220v voltage regulated ventillator and an IRON case.
+                      </p>
+                      <hr><br>
+                      <blockquote class="blockquote">
+                        <p class="mb-0"> Originally i wanted to write a web app for it but we left it like this. Here is some pictures. </p>
+                      </blockquote>
                   </div>
                 </div>
               </div>
@@ -128,7 +188,7 @@
                 <div class="card-header" id="headingThree">
                   <h2 class="mb-0">
                     <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
-                      Koma Toy-Car
+                      Koma'k Toy-Car
                     </button>
                   </h2>
                 </div>
