@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="socIcon.css" rel="stylesheet">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://kit.fontawesome.com/a26f6e4ee4.js"></script>
+    <script defer src="script.js"></script>
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+
+    <nav class="navbar fixed-bottom navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button id="navToggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link navBtn-active text-center" navButton="home" aria-current="page" href="#home"> <i class="fas fa-home navIcon"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-center" navButton="projects" href="#projects"> <i class="fas fa-project-diagram navIcon"></i> Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-center" navButton="contact" href="#contact"> <i class="fas fa-address-card navIcon"></i> Contact</a>
+                </li>
+            </ul>
+
+          </div>
+        </div>
+    </nav>
+
+        <div class="page" id="home" style="display: block;">
+        
+            <div class="container">
+
+                <div class="row">
+                    
+                    <div class="col-12">
+                        <h1 class="pageDesc text-center text-muted"> Zékány Gergő </h1>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center">
+                        <div class="profileImageWrapper">
+                            <img id="profilePicPreview" class="z-depth-2 img-fluid mx-auto d-block shadow" src="/images/ItsMe.jpg" alt="It's Me">
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <h5 class="pageDesc text-center text-muted"> 
+                            <a href="#electro">Electronics</a>, 
+                            <a href="#iot">Web</a>, 
+                            <a href="#webthing">Embedded Systems</a>, 
+                            <a href="#networkthing">Network</a>...
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="row text-center justify-content-center" style="margin:15px">
+                    <div class="col">
+                        <div class="socIconWrapper d-flex justify-content-center">
+                            <a class="socIcon fb" href="https://www.facebook.com/gergo.zekany.39/"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="socIconWrapper d-flex justify-content-center">
+                            <a class="socIcon github" href="https://github.com/zekageri"><i class="fab fa-github" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="socIconWrapper d-flex justify-content-center">
+                            <a class="socIcon insta" href="https://www.instagram.com/zekageri/"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="pageDesc text-center text-muted"> What do i do? </h2>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                    <div class="col">
+                      <div class="card h-100 shadow" id="electro">
+                        <img class="card-img-top img-fluid" src="/images/elektronics.jpg" alt="Electronics">
+                        <div class="card-body">
+                          <h5 class="card-title">Electronics</h5>
+                            <p class="card-text"> 
+
+                                I have learned as an <span class="electronics">electronics technician</span> in school for four years. 
+                                After that i went to the same profession for two years to the same school.
+                                I was in love with the tech and the underlying solutions. Ever since I know my mind iam
+                                curious about what brings the material to life, about what gives so much power to the hands of a human.
+                                <br><hr>
+
+                                <h5>Electrician</h5>
+
+                                After all that, for my own safety i went to do an Electrician degree. I already knew a huge part of these bigger systems since i was
+                                worked at a Company as an Electronics Techinican so the degree just came in handy. I worked a little bit in that field as a Maintenance
+                                of the company's production Lines. It was messy, but i loved every part of it.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">For over six years in school and ever since...</small>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 shadow" id="iot">
+                          <img class="card-img-top img-fluid" src="/images/iot.jpeg" alt="iot">
+                          <div class="card-body">
+                            <h5 class="card-title">Embedded Systems</h5>
+                            <p class="card-text">   
+                                Since i was obsessed with the <span class="electronics">electronics</span> and wanted to know more about it, when i did, i needed to controll it.
+                                I wanted to get my hands on the power it can give. So i started to tinker and learn about different Chips and Microcontrollers.
+                                When i put together my first <a href="https://www.electronics-tutorials.ws/waveforms/astable.html">astabil multivibrator</a> 
+                                with some 555 IC i was felt the need to go deeper. Played with <span class="chipBrand">Atmel</span> chips, <span class="chipBrand">PICs</span> 
+                                and finally i was introduced to my current MCU, wich is an <span class="chipBrand">ESP32</span> from a company called <span class="chipBrand">Espressif</span>.
+                            </p>
+                          </div>
+                          <div class="card-footer">
+                            <small class="text-muted">About four years and ever since...</small>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card h-100 shadow" id="webthing"> 
+                        <img class="card-img-top img-fluid" src="/images/web.webp" alt="Web">
+                        <div class="card-body">
+                          <h5 class="card-title">Web</h5>
+                          <p class="card-text">
+                              Web is in a special place in my hearth. I did not know anything about it and i don't really wanted to develop web things. But with the discovery of one
+                              of my favourite MCU, the <span class="chipBrand">ESP32</span> brought the knowledge of the web in the form of the <a href="https://en.wikipedia.org/wiki/Internet_of_things">IoT</a>. 
+                              It taught me different languages such as <span class="progLang">PHP</span> and <span class="progLang">Javascript</span>. I started to learn 
+                              <span class="writeLang">HTML</span> and <span class="writeLang">CSS</span>. By the time I remembered i was making a Smart Home project with an 
+                              <span class="chipBrand">ESP32</span> with a really complex <span class="progLang">C</span>, <span class="progLang">Assembly</span> and <span class="progLang">C++</span>
+                              <span class="backend">Backend</span> and a fairly complex <span class="frontend">Front-End</span> with <span class="progLang">Javascript</span>, <span class="writeLang">HTML</span> and <span class="writeLang">CSS</span>.
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">About one and a half year ago...</small>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 shadow" id="networkthing">
+                          <img class="card-img-top img-fluid" src="/images/network.jpg" alt="network">
+                          <div class="card-body">
+                            <h5 class="card-title">Network</h5>
+                            <p class="card-text">
+                                Networking was the choise of the flow. I had to learn and understand the principles if i wanted to make IoT projects. 
+                                I learned so much along the way from IPV4 to how data packets are processed on different ends. 
+                                I had to make serious changes on routers, gateways and eventually i made my own router at home with an <span class="chipBrand">ESP32</span> 
+                                and the help of the <span class="progLang">IDF</span> framework. When i was an electrician at my second company i did a little bit of networking job.
+                                I managed my boss's both public and private network inside the company. If one of the lines had a network issue 
+                                <span class="text-muted">(e.g PLC did not communicate with a HMI )</span> i was the one who solved it.
+                                I managed the restrictions on the networks, white and blacklists, etc..etc..
+                            </p>
+                          </div>
+                          <div class="card-footer">
+                            <small class="text-muted">About four years and ever since...</small>
+                          </div>
+                        </div>
+                    </div>
+
+                </div>
+                  
+            </div>
+
+        </div>
+        
+        <div class="page" id="projects" style="display: none;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="pageDesc text-center text-muted">My Projects</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h4 class="pageDesc text-center text-muted">
+                            This page is intended to showcase my projects so far. 
+                            The portfolio page is intentionally made with pure <span class="progLang">Javascript</span>, <span class="writeLang">HTML</span> and <span class="writeLang">CSS</span>.
+                        </h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="page" id="contact" style="display: none;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="pageDesc text-center text-muted">Contact Me</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="container">
+                            <div class="contactBox shadow">
+                                <div class="container">
+                                    <form action="">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">First and last name</span>
+                                            <input type="text" placeholder="First name" aria-label="First name" class="form-control">
+                                            <input type="text" placeholder="Last name" aria-label="Last name" class="form-control">
+                                        </div>
+
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Email</span>
+                                            <input type="email" placeholder="example@example.com" aria-label="email" class="form-control">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+  </body>
+</html>
