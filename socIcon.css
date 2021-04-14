@@ -1,0 +1,43 @@
+
+  .socIcon{
+    
+    width:40px;
+    height:40px;
+    display:block;
+    text-align:center;
+    margin:10px;
+    box-sizing: border-box;
+    text-decoration:none;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    background: linear-gradient(0deg, #ddd, #fff);
+    transition: .5s;
+  }
+  
+  .socIcon:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-decoration:none;
+  }
+  
+  .socIcon .fab {
+    width: 100%;
+    height:100%;
+    display:block;
+    background: linear-gradient(0deg, #fff, #ddd);
+    border-radius: 50%;
+    line-height: calc(55px - 12px);
+    font-size:24px;
+    color: #262626;
+    transition: .5s;
+  }
+  
+  .fb:hover .fab {
+    color: #3b5998;
+  }
+  
+  .github:hover .fab {
+    color: #00aced;
+  }
+  
+  .insta:hover .fab {
+    color: #e4405f;
+  }
