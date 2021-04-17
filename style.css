@@ -127,3 +127,18 @@ ul {
   .frontend{
     color: violet;
   }
+
+  .projectGithub{
+    font-size: x-large;
+    cursor: pointer;
+  }
+  .projectGithub a{
+    text-decoration: none;
+    color: rgb(82, 79, 79);
+  }
+  .projectGithub a:hover{
+    color: rgb(8, 25, 179);
+  }
+  .projectGithub:hover{
+    font-size: xx-large;
+  }
