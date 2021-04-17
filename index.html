@@ -366,35 +366,33 @@
 
   <div class="page" id="contact" style="display: none;">
     <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h1 class="pageDesc text-center text-muted">Contact Me</h1>
-        </div>
-      </div>
 
       <div class="row">
         <div class="col-12">
           <div class="container">
             <div class="contactBox shadow">
-              <div class="container">
-                <form action="">
+                <h1 class="pageDesc text-center text-muted">Contact Me</h1>
+                <br><hr>
+                <form action="/" method="post" id="contactMeForm">
+
                   <div class="input-group mb-3">
-                    <span class="input-group-text">First and last name</span>
-                    <input type="text" placeholder="First name" aria-label="First name" class="form-control">
-                    <input type="text" placeholder="Last name" aria-label="Last name" class="form-control">
+                    <input name="firstName" type="text" placeholder="First name" aria-label="First name" class="form-control" required>
+                    <input name="lastName" type="text" placeholder="Last name" aria-label="Last name" class="form-control" required>
                   </div>
 
                   <div class="input-group mb-3">
-                    <span class="input-group-text">Email</span>
-                    <input type="email" placeholder="example@example.com" aria-label="email" class="form-control">
+                    <input name="email" type="email" placeholder="example@example.com" aria-label="email" class="form-control" required>
                   </div>
 
                   <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
                   </div>
+
+                  <button type="button" onclick="contactMe()" class="btn btn-outline-primary">Send <i class="far fa-paper-plane"></i></button>
+
                 </form>
-              </div>
+                
             </div>
           </div>
         </div>
