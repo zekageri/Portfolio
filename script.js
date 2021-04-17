@@ -47,3 +47,15 @@ function handlePageNav(){
     lastPageButton.classList.remove("navBtn-active");
     currPageButton.classList.add("navBtn-active");
 }
+
+
+function contactMe(){
+    var formElements=document.getElementById("contactMeForm").elements;    
+    var postData={};
+    for (var i=0; i<formElements.length; i++){if (formElements[i].type!="submit"){postData[formElements[i].name]=formElements[i].value;}}
+    if(postData.email != "" && postData.firstName != "" && postData.lastName != "" && postData.message != ""){
+        window.location.href = `mailto:${postData.email}?subject=${postData.firstName} ${postData.lastName} Contacted By Portfolio&body=${postData.message}`;
+    }else{
+        return false;
+    }
+}
