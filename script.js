@@ -16,6 +16,8 @@ function navigation() {
 // Register function to hash change event
 window.onhashchange = navigation;
 
+// Go to home page at first, this is necessary if the user refreshed the page on an other page and the hash has not changed
+window.location.hash = navHistory[0];
 
 // Hide and show an element
 function showDiv(el){el.style.display = 'block';}
